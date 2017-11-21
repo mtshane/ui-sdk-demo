@@ -1,0 +1,73 @@
+/* Add SCSS variables for brand overrides here */
+
+
+/**********************************/
+/* EXAMPLE USE OF BRANDING (KION) */
+
+//$brand-primary: #ae0055;
+//$secondary-color: #cc99b1;
+//$logo-size: 150px;
+//$link-color: lighten($brand-primary, 10);
+//$link-hover-color: $link-color;
+//$dark-gray: #53534C;
+//
+///* logo */
+//$logo-image: url('/assets/images/_examples/kion_logo_white.svg');
+//.sidebar {
+//	.sidebar-content {
+//		.logo-wrap {
+//			padding: 5px;
+//			.logo {
+//				background-size: contain;
+//			}
+//		}
+//	}
+//}
+//
+///* table colors */
+//$table-bg: transparent;
+//$table-bg-hover:  rgba($secondary-color,.75);
+//$table-bg-active: $table-bg-hover;
+//$table-border-color: $dark-gray;
+//table thead th,
+//.table thead.thead-default th {
+//	background-color: $dark-gray;
+//	color: #ffffff;
+//}
+
+/*************************************/
+/* EXAMPLE USE OF BRANDING (Walmart) */
+// $brand-primary: #004c91;
+// $secondary-color: #fdbb30;
+// $logo-size: 150px;
+// $link-color: lighten($brand-primary, 10);
+// $link-hover-color: $link-color;
+//
+// /* logo */
+// $logo-image: url('/assets/images/_examples/walmart.svg');
+//
+// /* sidebar colors */
+// $sidebar-header-bg-color: $brand-primary;
+// $sidebar-bg-color: #add8f1;
+// $sidebar-link-color: $brand-primary;
+// $sidebar-link-hover-color: $brand-primary;
+// $sidebar-link-hover-bg-color: darken($sidebar-bg-color, 10);
+// $sidebar-link-active-color: $brand-primary;
+// $sidebar-link-active-hover-color: $brand-primary;
+// $sidebar-link-active-bg-color: darken($sidebar-bg-color,5);
+// $sidebar-link-active-accent-color: $secondary-color;
+// $sidebarFooter-bg-color: $brand-primary;
+// $sidebarFooter-color: darken($sidebarFooter-bg-color, 10);
+// $sidebarFooter-hover-color: lighten($sidebarFooter-bg-color, 10);
+// $sidebarFooter-hover-bg-color: darken($sidebarFooter-bg-color, 10);
+//
+///* table colors */
+//$table-bg: transparent;
+//$table-bg-accent: rgba($sidebar-bg-color,.5);
+//$table-bg-hover:  rgba($sidebar-bg-color,.75);
+//$table-bg-active: $table-bg-hover;
+//$table-border-color: $sidebar-bg-color;
+//table thead th,
+//.table thead.thead-default th {
+//	background-color: darken($sidebar-bg-color, 10);
+//}
