@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { RoutesModule } from './app-routes';
 import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
+import {AlertWizardComponent} from './alert-wizard/alert-wizard.component';
 
 describe('AppComponent', () => {
 		let fake_routes: Routes = [
@@ -30,6 +31,7 @@ describe('AppComponent', () => {
 					declarations: [
 						AppComponent,
 						HomeComponent,
+						AlertWizardComponent
 					],
 					imports: [
 						HttpModule,

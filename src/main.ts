@@ -7,9 +7,10 @@ import { environment } from './environments/environment';
 // Import web components from @kion library
 // import "@kion/kg-hello-world";
 
+import 'hammerjs';
+
 if (environment.production) {
-	enableProdMode();
+  enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.log(err));

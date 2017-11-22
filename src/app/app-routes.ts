@@ -12,10 +12,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 // Example component pages
 import { HomeComponent } from './home/home.component';
+import { AlertWizardComponent } from './alert-wizard/alert-wizard.component';
 
 // Pages with main layout (header, footer, nav, content area)
 const routes_layout_main = [
 	{ path: '', component: HomeComponent },
+	{ path: 'alert-wizard', component: AlertWizardComponent }
 ];
 
 // Pages with basic layout (no header, footer, or nav)

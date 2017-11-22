@@ -16,16 +16,19 @@ import { LayoutBasicComponent } from './layouts/basic/basic.component';
 
 /***** Import ui-sdk *****/
 import { KgModule } from '@kion/kg-library-angular';
+
 // Utilities must be imported separately and then added to declarations below
 
 /***** Misc imports *****/
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from '@blox/material'; // Material Design adaptors
+import {MatButtonModule, MatCheckboxModule, MatStepperModule} from '@angular/material';
 
 /***** Misc app pages *****/
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { HomeComponent } from './home/home.component';
-
+import { AlertWizardComponent } from './alert-wizard/alert-wizard.component';
 
 @NgModule({
 	schemas: [
@@ -42,7 +45,8 @@ import { HomeComponent } from './home/home.component';
 		// Misc app pages
 		PageNotFoundComponent,
 		ForbiddenComponent,
-		HomeComponent
+		HomeComponent,
+        AlertWizardComponent
 	],
 	imports: [
 		// Angular Imports
@@ -55,7 +59,11 @@ import { HomeComponent } from './home/home.component';
 		KgModule.forRoot(),
 
 		// Misc Imports
+		BrowserAnimationsModule,
 		MaterialModule,
+		MatButtonModule,
+		MatCheckboxModule,
+        MatStepperModule,
 
 		// Routes (Keep as last module loaded)
 		RoutesModule
