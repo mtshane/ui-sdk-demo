@@ -1,7 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgContentFooterService } from '@kion/kg-library-angular';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-
+import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import {Validators, FormControl} from '@angular/forms';
 
 @Component({
 	selector: 'app-alertwizard',
@@ -9,25 +7,16 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 	styleUrls: ['./alert-wizard.component.scss'],
 	encapsulation: ViewEncapsulation.None
 })
-export class AlertWizardComponent implements OnInit {
+export class AlertWizardComponent  {
 
-	isLinear = false;
-	firstFormGroup : FormGroup;
-	secondFormGroup : FormGroup;
-	thirdFormGroup : FormGroup;
+    Title : string;
+    Country : string;
+    Email : string;
 
-	constructor(private _formBuilder: FormBuilder, private kgContentFooterService: KgContentFooterService) { }
-
-	ngOnInit() {
-		this.firstFormGroup = this._formBuilder.group({
-			firstCtrl: ['', Validators.required]
-		});
-		this.secondFormGroup = this._formBuilder.group({
-			secondCtrl: ['', Validators.required]
-		});
-        this.thirdFormGroup = this._formBuilder.group({        });
-		this.kgContentFooterService.showFooter();
-	}
-
+    countries = [
+        {value: 'usa-0', viewValue: 'USA'},
+        {value: 'china-1', viewValue: 'China'},
+        {value: 'india-2', viewValue: 'India'}
+    ];
 
 }
